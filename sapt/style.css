@@ -1,0 +1,83 @@
+/* 全体レイアウト */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f9;
+  margin: 0;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  color: #2c3e50;
+}
+
+/* セクションの共通 */
+#startScreen, #quizScreen, #resultScreen {
+  transition: all 0.3s ease;
+}
+
+/* タイトル */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* 質問カード */
+.question {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.question p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.question button {
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.question button:hover {
+  background: #2980b9;
+}
+
+/* 戻るボタン */
+#backBtn {
+  background: #95a5a6;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+#backBtn:hover {
+  background: #7f8c8d;
+}
+
+/* 結果ゲージ */
+.axisResult {
+  margin: 1.5rem 0;
+}
+.bar {
+  height: 20px;
+  background: linear-gradient(to right, #4a90e2, #00c6ff);
+  width: 0%;
+  border-radius: 6px;
+  transition: width 0.7s ease-in-out;
+}
+.percentVal {
+  float: right;
+  font-weight: bold;
+  color: #333;
+}
