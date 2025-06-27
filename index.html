@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SAPT診断</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>SAPT診断</h1>
+    <p>あなたの個性を4文字で表す、26段階×4軸のパーソナリティ診断です。</p>
+    <button id="startBtn">診断スタート</button>
+  </div>
+
+  <div id="quizScreen" style="display: none;">
+    <div id="questionContainer"></div>
+    <div id="navButtons">
+      <button id="backBtn" style="display: none;">戻る</button>
+    </div>
+  </div>
+
+  <div id="resultScreen" style="display: none;">
+    <h2>あなたのSAPTコード：<span id="saptCode">----</span></h2>
+
+    <div class="axisResult" id="CREATIVITY">創造性 <span class="percentVal"></span><div class="bar"></div></div>
+    <div class="axisResult" id="EXTROVERSION">外向性 <span class="percentVal"></span><div class="bar"></div></div>
+    <div class="axisResult" id="SENSITIVITY">感受性 <span class="percentVal"></span><div class="bar"></div></div>
+    <div class="axisResult" id="ORDERLINESS">秩序性 <span class="percentVal"></span><div class="bar"></div></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
